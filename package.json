@@ -1,13 +1,9 @@
 {
-  "name": "react-helmet-async",
+  "name": "@alexseitsinger/react-helmet-async",
   "version": "1.0.2",
   "description": "Thread-safe Helmet for React 16+ and friends",
   "main": "dist/main.js",
-  "umd:main": "lib/index.umd.js",
-  "module": "lib/index.module.js",
-  "source": "src/index.js",
-  "types": "index.d.ts",
-  "repository": "http://github.com/NYTimes/react-helmet-async",
+  "repository": "http://github.com/alexseitsinger/react-helmet-async",
   "author": "Scott Taylor <scott.c.taylor@mac.com>",
   "license": "Apache-2.0",
   "files": [
