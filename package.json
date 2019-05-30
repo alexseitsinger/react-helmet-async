@@ -65,7 +65,7 @@
     "clean": "rimraf lib",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "test": "KYT_ENV_TYPE=test jest --no-cache",
+    "test": "jest --no-cache",
     "test-watch": "npm run test -- --watch",
     "test-update": "npm run test -- -u",
     "compile": "npm run clean && KYT_ENV_TYPE=client NODE_ENV=production microbundle --jsx React.createElement",
