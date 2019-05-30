@@ -1,3 +1,4 @@
+import "core-js/stable"
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import fastCompare from 'react-fast-compare';

@@ -1,5 +1,6 @@
 import { HELMET_ATTRIBUTE, TAG_NAMES, TAG_PROPERTIES } from './constants';
 import { flattenArray } from './utils';
+import raf from "raf";
 
 const updateTags = (type, tags) => {
   const headElement = document.head || document.querySelector(TAG_NAMES.HEAD);
@@ -162,7 +163,7 @@ const handleStateChangeOnClient = newState => {
   }
 
   if (newState.defer) {
-    _helmetCallback = requestAnimationFrame(() => {
+    _helmetCallback = raf(() => {
       commitTagChanges(newState, () => {
         _helmetCallback = null;
       });
