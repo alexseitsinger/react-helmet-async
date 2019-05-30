@@ -1,22 +1,15 @@
 {
   "presets": [
-    ["babel-preset-kyt-react", {
-      "includeRuntime": true,
-      "useProductionTransforms": false,
-      "envOptions": {
-        "client": {
-          "modules": "commonjs"
-        },
-        "server": {
-          "modules": "commonjs"
-        },
-        "test": {
-          "modules": "commonjs"
-        }
-      }
-    }]
+    ["@babel/preset-env",{
+        "useBuiltIns": "entry",
+        "corejs": 2
+    }],
+    "@babel/preset-react"
   ],
   "plugins": [
+    ["@babel/plugin-transform-runtime", {
+        "corejs": 2
+    }],
     "@babel/plugin-proposal-class-properties"
   ]
 }
