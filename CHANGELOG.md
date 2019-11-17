@@ -1,3 +1,7 @@
+<a name="v1.1.1"></a>
+## [v1.1.1](https://github.com/alexseitsinger/react-helmet-async/compare/v1.1.0...v1.1.1) (2019-11-17)
+
+
 <a name="v1.1.0"></a>
 ## [v1.1.0](https://github.com/alexseitsinger/react-helmet-async/compare/v1.0.3...v1.1.0) (2019-11-17)
 
