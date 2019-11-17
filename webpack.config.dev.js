@@ -3,21 +3,22 @@ const path = require('path')
 
 module.exports = {
   target: 'node',
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
-  devtool: false,
+  devtool: 'source-map',
   output: {
     path: path.resolve('./dist'),
-    filename: '[name].js',
-    libraryTarget: 'commonjs2'
+    filename: '[name].dev.js',
+    sourceMapFilename: '[name].dev.js.map',
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: 'babel-loader',
       },
     ],
   },
-}
+};
